@@ -114,3 +114,43 @@
 // }
 
 
+
+
+string email = Console.ReadLine();
+
+
+bool hasSpaces = false;
+int atCount = 0;
+
+
+foreach (char c in email){
+    if (c == ' '){
+        hasSpaces = true;
+    }
+    if (c == '@'){
+        atCount++;
+    }
+}
+
+
+if (email.Length < 5){
+    Console.WriteLine("Адрес некорректен: Длина должна быть не меньше 5 символов.");
+}
+else if (atCount != 1){
+    Console.WriteLine("Адрес некорректен: Должен быть ровно один символ @.");
+}
+else if (email.StartsWith("@") || email.EndsWith("@")) {
+    Console.WriteLine("Адрес некорректен: Адрес не должен начинаться или заканчиваться на @.");
+}
+else if (hasSpaces) {
+    Console.WriteLine("Адрес некорректен: В адресе не должно быть пробелов.");
+}
+
+else if (!email.EndsWith(".ru", StringComparison.OrdinalIgnoreCase) && 
+         !email.EndsWith(".com", StringComparison.OrdinalIgnoreCase)){
+    Console.WriteLine("Адрес некорректен: Адрес должен заканчиваться на .ru или .com.");
+}
+else{
+    Console.WriteLine("Адрес корректен");
+    Console.WriteLine(email.ToLower());
+}
