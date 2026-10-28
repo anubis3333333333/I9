@@ -43,3 +43,12 @@
 // }
 
 
+// string phrase = Console.ReadLine();
+// Console.WriteLine(phrase.ToUpper());
+// string underscores = phrase.Replace(" ", "_");
+// Console.WriteLine(underscores);
+
+// if (phrase.ToLower().Contains("стоп")){
+//     Console.WriteLine("Стоп-слово найдено!");
+// }
+
