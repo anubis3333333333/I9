@@ -66,3 +66,51 @@
 // string part3 = phone.Substring(9, 2);    
 // Console.WriteLine($"Телефон: +7 ({code}) {part1}-{part2}-{part3}");
 
+// string text = Console.ReadLine();
+
+// int totalChars = text.Length; 
+// int spacesCount = 0;
+// int vowelsCount = 0;
+// string vowels = "аеёиоуыэюя"; 
+
+
+// foreach (char c in text){
+//     if (c == ' '){
+//         spacesCount++;
+//     }
+    
+   
+//     if (vowels.Contains(char.ToLower(c))){
+//         vowelsCount++;
+//     }
+// }
+
+// Console.WriteLine($"Количество символов: {totalChars}");
+// Console.WriteLine($"Количество пробелов: {spacesCount}");
+// Console.WriteLine($"Количество гласных букв: {vowelsCount}");
+
+
+// Console.WriteLine(); 
+
+
+
+
+// string word = Console.ReadLine();
+
+// string reversed = "";
+
+
+// for (int i = word.Length - 1; i >= 0; i--){
+
+//     reversed += word[i];
+// }
+
+// Console.WriteLine($"Слово задом наперёд: {reversed}");
+// if (word.ToLower() == reversed.ToLower()){
+//     Console.WriteLine("Слово является палиндромом.");
+// }
+// else{
+//     Console.WriteLine("Слово НЕ является палиндромом.");
+// }
+
+
