@@ -52,3 +52,17 @@
 //     Console.WriteLine("Стоп-слово найдено!");
 // }
 
+// string date = Console.ReadLine();
+// string year = date.Substring(0, 4);
+// string month = date.Substring(5, 2);
+// string day = date.Substring(8, 2);
+// Console.WriteLine($"Дата: {day}.{month}.{year}");
+// Console.WriteLine(); 
+// Console.Write("Введите 11 цифр телефона (например, 89161234567): ");
+// string phone = Console.ReadLine();
+// string code = phone.Substring(1, 3);      
+// string part1 = phone.Substring(4, 3);     
+// string part2 = phone.Substring(7, 2);     
+// string part3 = phone.Substring(9, 2);    
+// Console.WriteLine($"Телефон: +7 ({code}) {part1}-{part2}-{part3}");
+
